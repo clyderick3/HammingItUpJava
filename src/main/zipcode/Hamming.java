@@ -11,7 +11,8 @@ public class Hamming {
 
     public int getHammingDistance() {
         //Comparing two DNA strands and counting how many of the nucleotides
-       // are different from their equivalent in the other string.
+        // are different from their equivalent in the other string.
+
         return -1;
     }
 }
