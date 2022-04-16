@@ -12,7 +12,7 @@ public class Hamming {
         sLength = s.length();
         s1Length = s1.length();
         if (sLength != s1Length){
-            throw new IllegalArgumentException("The two strands MUST be of equal length!");
+            throw new IllegalArgumentException("leftStrand and rightStrand must be of equal length.");
         }
     }
 
@@ -24,8 +24,7 @@ public class Hamming {
             if (thing.charAt(i) != thing1.charAt(i)){
                 hammingDistance++;
             }
-//            hammingDistance += count;
-//            return hammingDistance;
+
         }
 
         return hammingDistance;
