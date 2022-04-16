@@ -12,7 +12,7 @@ public class Hamming {
         sLength = s.length();
         s1Length = s1.length();
         if (sLength != s1Length){
-            throw new IllegalArgumentException("The two strands MUST be of equal length!")
+            throw new IllegalArgumentException("The two strands MUST be of equal length!");
         }
     }
 
@@ -20,9 +20,13 @@ public class Hamming {
         //Comparing two DNA strands and counting how many of the nucleotides
         // are different from their equivalent in the other string.
         int count = 0;
+        int hammingDistance = 0;
         for (int i = 0; i < s1Length; i++){
-
-
+            if (thing.charAt(i) != thing1.charAt(i)){
+                count++;
+            }
+            hammingDistance += count;
+            return hammingDistance;
         }
 
         return -1;
