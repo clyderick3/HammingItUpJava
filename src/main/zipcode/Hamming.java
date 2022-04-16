@@ -19,13 +19,12 @@ public class Hamming {
     public int getHammingDistance() {
         //Comparing two DNA strands and counting how many of the nucleotides
         // are different from their equivalent in the other string.
-        int count = 0;
         int hammingDistance = 0;
         for (int i = 0; i < s1Length; i++){
             if (thing.charAt(i) != thing1.charAt(i)){
-                count++;
+                hammingDistance++;
             }
-            hammingDistance += count;
+//            hammingDistance += count;
 //            return hammingDistance;
         }
 
