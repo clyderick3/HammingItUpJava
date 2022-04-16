@@ -26,9 +26,9 @@ public class Hamming {
                 count++;
             }
             hammingDistance += count;
-            return hammingDistance;
+//            return hammingDistance;
         }
 
-        return -1;
+        return hammingDistance;
     }
 }
